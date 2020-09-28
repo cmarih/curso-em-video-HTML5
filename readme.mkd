@@ -1,0 +1,242 @@
+# HTML5
+
+## Estrutura do HTML:
+~~~HTML
+<!DOCTYPE html> <!-- Informa o navegador a versão do HTML-->
+    <html lang="pt-br"> <!-- Indica o inicio do documento html e informa o idioma do site-->
+        <head> <!--aqui serão adicionadas informações importantes para o navegador, chamamos esa tag de 'cabeça'-->
+            <meta charset="UTF-8"> <!--Ajusta o texto, para que seja possivel usar ç, acentos e etc-->
+            <title>Básico de HTML5</title> <!--Adiciona um titulo a página-->
+        </head> <!--Fechamento da tag 'cabeça'-->
+        <body> <!--aqui adicionamos as informações da pagina que serão visualizadas pelo usuário, chamamos ela de 'corpo'-->
+    
+        </body> <!--Fechamento da tag 'corpo'-->
+    </html><!--Fechamento da tag HTML-->
+~~~
+
+## Implementando CSS:
+~~~css
+<head>
+    /*A tag de estilo <style> pode ser adicionada junto a tag <head>, porem, é mais adequado usá-la em um arquivo externo*/
+    <style>
+        h1{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 30pt;
+            color: blueviolet;
+        }
+    </style>
+</head>
+~~~
+
+## Tags básicas
+
+- <strong>Cabeçalho de seção (h1, h2, h3, h4, h5 e h6): </strong> representam seis níveis de título de seção. H1 é o nível de seção mais alto, o mais importante e H6 é o mais baixo, nem tão importante assim.
+
+    ~~~html
+    <h1>Cabeçalho nível 1</h1>
+        <h2>Cabeçalho nível 2</h2>
+            <h3>Cabeçalho nível 3</h3>
+                <h4>Cabeçalho nível 4</h4>
+                    <h5>Cabeçalho nível 5</h5>
+                        <h6>Cabeçalho nível 6</h6>
+    ~~~
+
+> IMPORTANTE: Não use níveis menores para diminuir o tamanho da fonte do cabeçalho: use a propriedade css.
+
+- <strong>Tag div: </strong> é um container genérico para conteúdo de fluxo, que de certa forma não representa nada. Ele pode ser utilizado para agrupar elementos para fins de estilos (usando class ou id), ou porque eles compartilham valores de atributos, como lang. Ele deve ser utilizado somente quando não tiver outro elemento de semântica (tal como 'article' ou 'nav').
+
+    ~~~html
+    <div>
+        <p>Qualquer tipo de conteúdo aqui.</p>
+        <img src="imagem.png">
+    </div>
+    ~~~
+
+- <strong>Tag hgroup: </strong> Agrupamento de títulos com subtítulos da mesma categoria. Não há diferença visualmente, mas sim, semânticamente.
+
+    ~~~html
+    <hgroup>
+        <h1>Olá mundo!!</h1>
+        <h2>Me livrando da maldição!</h2>
+    </hgroup>
+    ~~~
+
+- <strong>Tag img: </strong> Adiciona imagens a página. É uma tag que não possue fechamento (/img)
+
+    ~~~html
+    <img src="imagem.png">
+    ~~~
+
+- <strong>Tag header: </strong> representa um grupo de suporte introdutório ou navegacional. Pode conter alguns elementos de cabeçalho mas também outros elementos como um logo, seções de cabeçalho, formulário de pesquisa, e outros.
+
+    ~~~html
+    <header>
+        <h1>Título da Página Principal</h1>
+        <img src="logo.png" alt="logo">
+    </header>
+    ~~~
+
+- <strong> Tag  br (Break Row): </strong> é uma tag de quebra de linha, espaçamento entre tags.
+
+    ~~~html
+        <h1>Título da Página Principal</h1> <br><br> <!--Adicionando 2 quebras de linha-->
+        <img src="logo.png" alt="logo">
+    ~~~
+- <strong>Tag p: </strong> define o paragrafo do seu documento.
+
+    ~~~html
+    <p>Aqui tem um paragrafo.</p>
+    ~~~
+
+- <strong>Tag wbr: </strong> é uma tag para quebra de palabras.
+
+    ~~~html
+    <p>super-<wbr>humano</p>
+    ~~~
+
+- <strong></strong>
+
+- <strong></strong>
+
+- <strong></strong>
+
+- <strong></strong>
+
+## Entidades HTML
+<p>Alguns caracteres são reservados em HTML. Se você usar os sinais de menor que (<) ou maior que (>) em seu texto, o navegador pode misturá-los com tags.
+As entidades de caracteres são usadas para exibir caracteres reservados em HTML.</p>
+
+- <strong> &nbsp; - non-breaking space: </strong> Espaço lateral, entre elemento. Espaço sem quebra:
+
+    ~~~html
+    <h3>Tecnologia &nbsp; Inovações</h3>
+    ~~~
+
+- <strong>&shy; - Soft Hyphen: </strong> realiza quebra de palavra, adicionando o hifen (-).
+
+    ~~~html
+    <p>video &shy; conferên &shy; cia</p>
+    ~~~
+
+- <strong>&gt; , &lt; </strong> simbolo de maior e menor, respectivamente.
+
+    ~~~html
+    <h2>Simbolos Especiais:</h2>
+        <p>
+            Maior: &gt;
+            <br>
+            Menor: &lt;
+        </p>
+    ~~~
+
+- <strong>&le; , &ge; </strong> simbolo de menor/igual e maior/igual respectivamente.
+
+    ~~~html
+     <h2>Simbolos Especiais:</h2>
+        <p>
+            Menor igual: &le;
+            <br>
+            Maior igual: &ge;
+        </p>
+    ~~~
+
+- <strong>&pound; , &real; , &euro; </strong> simbolo monetário.
+
+    ~~~html
+     <h2>Simbolos Monetários:</h2>
+        <p>
+            Libras: &pound;
+            <br>
+            Euro: &euro;
+            <br>
+            Real: &real;
+        </p>
+    ~~~
+
+- <strong>&permil; , &sum; , &infin; , &times; ,  &plusmn; , &oplus; , &radic; , &ne;</strong> 
+
+    ~~~html
+       <h2>Simbolos</h2>
+        <p>
+            &permil;
+            <br>
+            &sum;
+            <br>
+            &infin;
+            <br>
+            &times;
+            <br>
+            &plusmn;
+            <br>
+            &oplus;
+            <br>
+            &radic;
+            <br>
+            &ne;
+        </p>
+    ~~~ 
+
+- <strong>&Delta; , &Lambda; , &omega; ,  &phi;</strong> 
+
+    ~~~html
+     <h2>Simbolos</h2>
+        <p>
+            &Delta;
+            <br>
+            &Lambda;
+            <br>
+            &omega;
+            <br>
+            &phi;
+            
+        </p>
+    ~~~ 
+
+- <strong>&copy; , &trade; , &reg; </strong> simbolos de registros.
+
+    ~~~html
+     <h2>Simbolos Especiais:</h2>
+        <p>
+            Copyright: &copy;
+            <br>
+            Marca registrada: &reg;
+            <br>
+            Trade mark: &trade;
+        </p>
+    ~~~ 
+
+- <strong>&larr; , &rarr; , &uarr; , &darr; ,  &harr; </strong> setas.
+
+    ~~~html
+     <h2>Setas</h2>
+        <p>
+            &larr;
+            <br>
+            &rarr;
+            <br>
+            &uarr;
+            <br>
+            &darr;
+            <br>
+            &harr;
+            
+        </p>
+    ~~~ 
+
+- <strong>&spades; , &clubs; , &hearts; , &diams; </strong> Simbolos das cartas.
+
+    ~~~html
+    <h2>Simbolos das cartas</h2>
+        <p>
+            &spades;
+            <br>
+            &clubs;
+            <br>
+            &hearts;
+            <br>
+            &diams;
+                        
+        </p>
+    ~~~
+ 
+
