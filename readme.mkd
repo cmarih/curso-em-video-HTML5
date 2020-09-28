@@ -94,29 +94,36 @@
     <p>super-<wbr>humano</p>
     ~~~
 
-- <strong> Tag &lt;b&gt;:</strong> Formatação em negrito.
+- <strong> Tag &lt;b&gt;:</strong> Formatação em <b>negrito</b>.
 
     ~~~html
     <p>Este texto está em <b>Negrito</b>!</p>
     ~~~
 
-- <strong>&lt;strong&gt;:</strong> Destaque em determinada palavra ou paragrafo.
+- <strong>&lt;strong&gt;:</strong> <strong>Destaque</strong> em determinada palavra ou paragrafo.
 
     ~~~html
     <p>Este texto está em <strong>Destaque</strong>!</p>
     ~~~
 
-- <strong>&lt;em&gt;:</strong> Ênfase em palavras e textos.
+- <strong>&lt;em&gt;:</strong> <em>Ênfase</em> em palavras e textos.
 
     ~~~html
     <p>Este texto está em <em>Ênfase</em>!</p>
     ~~~
 
-- <strong>&lt;i&gt;:</strong> Formatação em itálico.
+- <strong>&lt;i&gt;:</strong> Formatação em <i>itálico</i>.
 
     ~~~html
     <p>Este texto está em <i>Itálico</i>!</p>
     ~~~
+
+- <strong>&lt;del&gt;:</strong> Texto <del>Deletado</del>.
+
+    ~~~html
+    <p>Este texto está em <del>Itálico</del>!</p>
+    ~~~
+
 
 ## Entidades HTML
 <p>Alguns caracteres são reservados em HTML. Se você usar os sinais de menor que (<) ou maior que (>) em seu texto, o navegador pode misturá-los com tags.
