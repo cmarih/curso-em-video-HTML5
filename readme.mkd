@@ -43,7 +43,7 @@
 
 > IMPORTANTE: Não use níveis menores para diminuir o tamanho da fonte do cabeçalho: use a propriedade css.
 
-- <strong>Tag div: </strong> é um container genérico para conteúdo de fluxo, que de certa forma não representa nada. Ele pode ser utilizado para agrupar elementos para fins de estilos (usando class ou id), ou porque eles compartilham valores de atributos, como lang. Ele deve ser utilizado somente quando não tiver outro elemento de semântica (tal como 'article' ou 'nav').
+- <strong>Tag &lt;div&gt;: </strong> é um container genérico para conteúdo de fluxo, que de certa forma não representa nada. Ele pode ser utilizado para agrupar elementos para fins de estilos (usando class ou id), ou porque eles compartilham valores de atributos, como lang. Ele deve ser utilizado somente quando não tiver outro elemento de semântica (tal como 'article' ou 'nav').
 
     ~~~html
     <div>
@@ -52,7 +52,7 @@
     </div>
     ~~~
 
-- <strong>Tag hgroup: </strong> Agrupamento de títulos com subtítulos da mesma categoria. Não há diferença visualmente, mas sim, semânticamente.
+- <strong>Tag &lt;hgroup&gt;: </strong> Agrupamento de títulos com subtítulos da mesma categoria. Não há diferença visualmente, mas sim, semânticamente.
 
     ~~~html
     <hgroup>
@@ -61,13 +61,13 @@
     </hgroup>
     ~~~
 
-- <strong>Tag img: </strong> Adiciona imagens a página. É uma tag que não possue fechamento (/img)
+- <strong>Tag &lt;img&gt;: </strong> Adiciona imagens a página. É uma tag que não possue fechamento (/img)
 
     ~~~html
     <img src="imagem.png">
     ~~~
 
-- <strong>Tag header: </strong> representa um grupo de suporte introdutório ou navegacional. Pode conter alguns elementos de cabeçalho mas também outros elementos como um logo, seções de cabeçalho, formulário de pesquisa, e outros.
+- <strong>Tag h&lt;header&gt;: </strong> representa um grupo de suporte introdutório ou navegacional. Pode conter alguns elementos de cabeçalho mas também outros elementos como um logo, seções de cabeçalho, formulário de pesquisa, e outros.
 
     ~~~html
     <header>
@@ -76,31 +76,47 @@
     </header>
     ~~~
 
-- <strong> Tag  br (Break Row): </strong> é uma tag de quebra de linha, espaçamento entre tags.
+- <strong> Tag  &lt;br&gt; (Break Row): </strong> é uma tag de quebra de linha, espaçamento entre tags.
 
     ~~~html
         <h1>Título da Página Principal</h1> <br><br> <!--Adicionando 2 quebras de linha-->
         <img src="logo.png" alt="logo">
     ~~~
-- <strong>Tag p: </strong> define o paragrafo do seu documento.
+- <strong>Tag &lt;p&gt;: </strong> define o paragrafo do seu documento.
 
     ~~~html
     <p>Aqui tem um paragrafo.</p>
     ~~~
 
-- <strong>Tag wbr: </strong> é uma tag para quebra de palabras.
+- <strong>Tag &lt;wbr&gt;: </strong> é uma tag para quebra de palavras.
 
     ~~~html
     <p>super-<wbr>humano</p>
     ~~~
 
-- <strong></strong>
+- <strong> Tag &lt;b&gt;:</strong> Formatação em negrito.
 
-- <strong></strong>
+    ~~~html
+    <p>Este texto está em <b>Negrito</b>!</p>
+    ~~~
 
-- <strong></strong>
+- <strong>&lt;strong&gt;:</strong> Destaque em determinada palavra ou paragrafo.
 
-- <strong></strong>
+    ~~~html
+    <p>Este texto está em <strong>Destaque</strong>!</p>
+    ~~~
+
+- <strong>&lt;em&gt;:</strong> Ênfase em palavras e textos.
+
+    ~~~html
+    <p>Este texto está em <em>Ênfase</em>!</p>
+    ~~~
+
+- <strong>&lt;i&gt;:</strong> Formatação em itálico.
+
+    ~~~html
+    <p>Este texto está em <i>Itálico</i>!</p>
+    ~~~
 
 ## Entidades HTML
 <p>Alguns caracteres são reservados em HTML. Se você usar os sinais de menor que (<) ou maior que (>) em seu texto, o navegador pode misturá-los com tags.
