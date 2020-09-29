@@ -124,7 +124,7 @@
     <p>Este texto está em <del>Itálico</del>!</p>
     ~~~
 
-- <strong>Tag &lt;pre&gt;:É uma tag de pré formatação, ou seja, todos os espaços e quebras de linhas serão consideradas no html.
+- <strong>Tag &lt;pre&gt;:</strong> É uma tag de pré formatação, ou seja, todos os espaços e quebras de linhas serão consideradas no html.
 
     ~~~html
     <h2>Código</h2>
@@ -140,7 +140,7 @@
         -->
     ~~~
 
-- <strong>Tag &lt;code&gt;:É uma tag semântica, que diz para o navegador que ali possui um código.
+- <strong>Tag &lt;code&gt;:</strong>É uma tag semântica, que diz para o navegador que ali possui um código.
 
     ~~~html
     <h2>Código</h2>
@@ -162,7 +162,7 @@
         -->
     ~~~
 
-- <strong>Tag &lt;figure&gt; e Tag &lt;figcaption&gt;:É uma tag semântica, que diz para o navegador que ali possui uma imagem, permite adicinar legendas e é usado para acessibilidade e mecanismos de busca.
+- <strong>Tag &lt;figure&gt; e Tag &lt;figcaption&gt;: </strong> É uma tag semântica, que diz para o navegador que ali possui uma imagem, permite adicinar legendas e é usado para acessibilidade e mecanismos de busca.
 
     ~~~html
     <h2>Tags de imagens</h2>
@@ -176,7 +176,7 @@
         </figure>
     ~~~
 
-- <strong>Tag &lt;nav&gt; e Tag &lt;figcaption&gt;:É uma tag container, que diz para o navegador que ali possui uma area de navegação, utilizada principalmente para menus.
+- <strong>Tag &lt;nav&gt; e Tag &lt;figcaption&gt;:</strong>É uma tag container, que diz para o navegador que ali possui uma area de navegação, utilizada principalmente para menus.
 
     ~~~html
     <nav>
