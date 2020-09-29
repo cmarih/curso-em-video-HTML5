@@ -67,7 +67,7 @@
     <img src="imagem.png">
     ~~~
 
-- <strong>Tag h&lt;header&gt;: </strong> representa um grupo de suporte introdutório ou navegacional. Pode conter alguns elementos de cabeçalho mas também outros elementos como um logo, seções de cabeçalho, formulário de pesquisa, e outros.
+- <strong>Tag &lt;header&gt;: </strong> representa um grupo de suporte introdutório ou navegacional. Pode conter alguns elementos de cabeçalho mas também outros elementos como um logo, seções de cabeçalho, formulário de pesquisa, e outros.
 
     ~~~html
     <header>
@@ -124,6 +124,65 @@
     <p>Este texto está em <del>Itálico</del>!</p>
     ~~~
 
+- <strong>Tag &lt;pre&gt;:É uma tag de pré formatação, ou seja, todos os espaços e quebras de linhas serão consideradas no html.
+
+    ~~~html
+    <h2>Código</h2>
+        <code>
+            #include &lt;iostream&gt;
+            int main() {
+                cout << "olá munto!!";
+                return 0;
+            }
+        </code>
+        <!-- Visualização: 
+        #include <iostream> int main() { cout << "olá munto!!"; return 0; }
+        -->
+    ~~~
+
+- <strong>Tag &lt;code&gt;:É uma tag semântica, que diz para o navegador que ali possui um código.
+
+    ~~~html
+    <h2>Código</h2>
+        <pre>
+            <code>
+                #include &lt;iostream&gt;
+                int main() {
+                    cout << "olá munto!!";
+                    return 0;
+                }
+            </code>
+        </pre>
+         <!-- Visualização: 
+            #include <iostream>
+                int main() {
+                    cout << "olá munto!!";
+                    return 0;
+                }
+        -->
+    ~~~
+
+- <strong>Tag &lt;figure&gt; e Tag &lt;figcaption&gt;:É uma tag semântica, que diz para o navegador que ali possui uma imagem, permite adicinar legendas e é usado para acessibilidade e mecanismos de busca.
+
+    ~~~html
+    <h2>Tags de imagens</h2>
+        <figure>
+            <img src="img.png" alt="exemplo de imagem">
+            <figcaption>
+                <h1>Título da legenda</h3>
+                    <p>Adicionando uma descrição/legenda da imagem.</p>
+            </figcaption>
+
+        </figure>
+    ~~~
+
+- <strong>Tag &lt;nav&gt; e Tag &lt;figcaption&gt;:É uma tag container, que diz para o navegador que ali possui uma area de navegação, utilizada principalmente para menus.
+
+    ~~~html
+    <nav>
+        <h1>Menu Principal</h1>
+    </nav>
+    ~~~
 
 ## Entidades HTML
 <p>Alguns caracteres são reservados em HTML. Se você usar os sinais de menor que (<) ou maior que (>) em seu texto, o navegador pode misturá-los com tags.
@@ -261,5 +320,253 @@ As entidades de caracteres são usadas para exibir caracteres reservados em HTML
                         
         </p>
     ~~~
+## Listas em HTML
+
+- <strong>Lista ordenada &lt;ol&gt;:</strong>
+
+    ~~~html
+        <nav>
+            <h1>Menu Principal</h1>
+            <ol>
+                <li>Home</li>
+                <li>Especificações</li>
+                <li>Fotos</li>
+                <li>Multimídia</li>
+                <li>Fale conosco</li>
+            </ol>
+        </nav>
+
+        <!--
+            Menu Principal
+            1. Home
+            2. Especificações
+            3. Fotos
+            4. Multimídia
+            5. Fale conosco
+        -->
+    ~~~
+
+    - <strong>Tipos de lista ordenada &lt;ol&gt;:</strong>
+
+        1. Ordenado númericamente:
+
+            ~~~html
+                <nav>
+                    <h1>Menu Principal</h1>
+                    <ol type="1">
+                        <li>Home</li>
+                        <li>Especificações</li>
+                        <li>Fotos</li>
+                        <li>Multimídia</li>
+                        <li>Fale conosco</li>
+                    </ol>
+                </nav>
+
+                <!--
+                    Menu Principal
+                    1. Home
+                    2. Especificações
+                    3. Fotos
+                    4. Multimídia
+                    5. Fale conosco
+                -->
+            ~~~
+
+        2. Ordenado alfabeticamente:
+
+            ~~~html
+                <nav>
+                    <h1>Menu Principal</h1>
+                    <ol type="a">
+                        <li>Home</li>
+                        <li>Especificações</li>
+                        <li>Fotos</li>
+                        <li>Multimídia</li>
+                        <li>Fale conosco</li>
+                    </ol>
+                </nav>
+
+                <!--
+                    Menu Principal
+                    a. Home
+                    b. Especificações
+                    c. Fotos
+                    d. Multimídia
+                    e. Fale conosco
+                -->
+
+                <nav>
+                    <h1>Menu Principal</h1>
+                    <ol type="A">
+                        <li>Home</li>
+                        <li>Especificações</li>
+                        <li>Fotos</li>
+                        <li>Multimídia</li>
+                        <li>Fale conosco</li>
+                    </ol>
+                </nav>
+
+                <!--
+                    Menu Principal
+                    A. Home
+                    B. Especificações
+                    C. Fotos
+                    D. Multimídia
+                    E. Fale conosco
+                -->
+            ~~~
+
+        3. Ordenado em numeração romana:
+
+            ~~~html
+                <nav>
+                    <h1>Menu Principal</h1>
+                    <ol type="i">
+                        <li>Home</li>
+                        <li>Especificações</li>
+                        <li>Fotos</li>
+                        <li>Multimídia</li>
+                        <li>Fale conosco</li>
+                    </ol>
+                </nav>
+
+                <!--
+                    Menu Principal
+                    i. Home
+                ii. Especificações
+                iii. Fotos
+                iv. Multimídia
+                    v. Fale conosco
+                -->
+
+                <nav>
+                    <h1>Menu Principal</h1>
+                    <ol type="I">
+                        <li>Home</li>
+                        <li>Especificações</li>
+                        <li>Fotos</li>
+                        <li>Multimídia</li>
+                        <li>Fale conosco</li>
+                    </ol>
+                </nav>
+
+                <!--
+                    Menu Principal
+                    I. Home
+                II. Especificações
+                III. Fotos
+                IV. Multimídia
+                    V. Fale conosco
+                -->
+            ~~~
+
+- <strong>Lista não ordenada &lt;ul&gt;:</strong>
+
+    ~~~html
+        <nav>
+            <h1>Menu Principal</h1>
+            <ul>
+                <li>Home</li>
+                <li>Especificações</li>
+                <li>Fotos</li>
+                <li>Multimídia</li>
+                <li>Fale conosco</li>
+            </ul>
+        </nav>
+
+        <!--
+            Menu Principal
+            • Home
+            • Especificações
+            • Fotos
+            • Multimídia
+            • Fale conosco
+        -->
+    ~~~
  
+    - <strong>Tipos de lista não ordenadas &lt;ol&gt;:</strong>
+
+        1. Ordenação square:
+
+            ~~~html
+                <nav>
+                    <h1>Menu Principal</h1>
+                    <ol type="square">
+                        <li>Home</li>
+                        <li>Especificações</li>
+                        <li>Fotos</li>
+                        <li>Multimídia</li>
+                        <li>Fale conosco</li>
+                    </ol>
+                </nav>
+
+                <!--
+                    Menu Principal
+                     Home
+                     Especificações
+                     Fotos
+                     Multimídia
+                     Fale conosco
+                -->
+            ~~~
+
+        
+        2. Ordenação circle:
+
+            ~~~html
+                <nav>
+                    <h1>Menu Principal</h1>
+                    <ol type="circle">
+                        <li>Home</li>
+                        <li>Especificações</li>
+                        <li>Fotos</li>
+                        <li>Multimídia</li>
+                        <li>Fale conosco</li>
+                    </ol>
+                </nav>
+
+                <!--
+                    Menu Principal
+                    ° Home
+                    ° Especificações
+                    ° Fotos
+                    ° Multimídia
+                    ° Fale conosco
+                -->
+          
+        3. Ordenação disc:
+
+            ~~~html
+                <nav>
+                    <h1>Menu Principal</h1>
+                    <ol type="disc">
+                        <li>Home</li>
+                        <li>Especificações</li>
+                        <li>Fotos</li>
+                        <li>Multimídia</li>
+                        <li>Fale conosco</li>
+                    </ol>
+                </nav>
+
+                <!--
+                    Menu Principal
+                    • Home
+                    • Especificações
+                    • Fotos
+                    • Multimídia
+                    • Fale conosco
+                -->
+
+## Semântica em HTML
+
+<h2>Tags semânticas do HTML5</h2>
+
+- <strong>Tag &lt;section&gt;: </strong> Usado para dividir seções na página.
+
+- <strong>Tag &lt;aside&gt;: </strong> Cria uma seção lateral
+
+- <strong>Tag &lt;footer&gt;: </strong> Cria um rodapé.
+
+- <strong>Tag &lt;footer&gt;: </strong> Cria um campo de artigo.
+
 
